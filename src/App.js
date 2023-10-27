@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import {LinkIcon} from './assets/icon';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="content-container">
+        <h1 className="header-text">Reduce the length of your link</h1>
+        <div className="input-container">
+          <label>Reduce the link length</label>
+          <div className="inner-input-container">
+            <input type="text" className="" placeholder="Paste your url here" />
+            <button className="reduce-link-btn">
+              <LinkIcon /> Reduce Link
+            </button>
+          </div>
+        </div>
+        <div className="input-container">
+          <label>Result</label>
+          <div className="inner-input-container">
+            <div className="short-url">wrfwve4</div>
+            <button className="short-link-btn">
+              <LinkIcon />
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
